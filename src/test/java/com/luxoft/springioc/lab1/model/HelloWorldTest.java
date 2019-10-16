@@ -26,7 +26,7 @@ public class HelloWorldTest {
 
 	@Test
 	public void testInitPerson() {
-		UsualPerson person = (UsualPerson) context.getBean("person", Person.class);
+		UsualPerson person = (UsualPerson) context.getBean(Person.class); //byType
 
 		System.out.println("->" + person.getCountry().getA());
 //		assertEquals(expectedPerson, person);
