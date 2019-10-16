@@ -3,17 +3,23 @@ package com.luxoft.springioc.lab1.model;
 import java.util.List;
 
 public class UsualPerson implements Person {
+
     private int id;
-
     private String name;
-
     private Country country;
-
     private int age;
     private float height;
     private boolean isProgrammer;
-
     private List<String> contacts;
+
+    public UsualPerson() {
+    }
+
+    public UsualPerson(String name, Country country, int age) {
+        this.name = name;
+        this.country = country;
+        this.age = age;
+    }
 
     public void setIsProgrammer(boolean isProgrammer) {
         this.isProgrammer = isProgrammer;
